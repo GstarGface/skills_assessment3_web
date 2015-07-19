@@ -2,22 +2,25 @@
 body{
 	font-family:'Shadows Into Light', cursive;
 	margin:100px;
+	background-color: #FFD175;
 
 }
 h1{
 	text-align:center;
 	margin: 1em;
+	color:#66A3FF;
 }
-.instructions{
-	border-style:dotted;
-	border-color:#66A3FF;
-	background-color: #FFFF99;
-}
+
 
 div{
 	text-align: center;
 	margin-bottom: 2em;
 	
+}
+.page_info{
+	border-style:dotted;
+	border-color:#66A3FF;
+	background-color: #FFFF99;
 }
 
 .forms{
@@ -29,4 +32,18 @@ div{
 }
 #lastname{
 	font-weight:600;
+}
+.branding{
+	color: #66A3FF ;
+	font-weight: 900;
+}
+
+#bowchicka{
+	font-weight: 600;
+	color:#1975FF;
+
+}
+#bowwow{
+	font-weight: 400;
+	color:#FFFF00;
 }

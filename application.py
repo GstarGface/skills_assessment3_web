@@ -13,5 +13,18 @@ def index_page():
     #
     # return render_template("index.html")
 
+@app.route("/application-form")
+def application_form_page():
+	return render_template("application-form.html")
+
+@app.route("/application", methods=["GET", "POST"])
+def application_page():
+	firstname = request.form.get("firstname")
+	lastname = request.form.get("lastname")
+	salary = request.form.get("salary")
+	position = request.form.get("position")
+	return render_template("application-received.html", firstname=firstname, lastname=lastname, position=position, salary=salary)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
