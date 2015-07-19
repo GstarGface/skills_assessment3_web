@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="./../static/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1>Job Application</h1>
+
+<p class="instructions">Thanks for your interest in BowChickaBowWow!
+<br>
+If you are an awesome, smart, motivated barnyard animal then we would love to have you join our team. Please complete the form below!  </p>
+<form action="/application" method="POST">
+	<div>
+		<label>First Name:
+			<input type="text" name="firstname" class="forms">
+		</label>
+		<label>Last Name:
+			<input type="text" name="lastname" class="forms" id="lastname" >
+		</label>
+	</div>
+	<div>
+		<label>Salary Requirement <i>(in bales of hay):</i>
+			<input type="text" name="salary" class="forms">
+		</label>
+	</div>
+	<div>
+		<label>Which position are you applying for?
+			<select name="Position" class="forms">
+				<option value="Software"> Software Engineer </option>
+				<option value="QA"> QA Engineer </option>
+				<option value="Product"> Product Manager </option>
+			</select>
+		</label>
+	</div>
+
+	
+</form>
+
+<form>
+	<div> 
+		<p> I'm ready to join the team!
+			<input type="submit" class="submit">
+		</p>
+	</div>
+</form>
+</body>
+</html>
